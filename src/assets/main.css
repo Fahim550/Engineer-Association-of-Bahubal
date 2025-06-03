@@ -33,3 +33,9 @@ a,
     padding: 0 2rem;
   }
 }
+
+@theme {
+  --color-white: #f9fafb;
+  --color-primary: #2d4052;
+  --color-secondary: #ff6b35;
+}

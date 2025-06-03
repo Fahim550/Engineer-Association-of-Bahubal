@@ -1,10 +1,10 @@
 <script setup>
 import NavbarVue from "./components/Shared/Navbar.vue";
+import HomeViewVue from "./Views/HomeView.vue";
 </script>
 
 <template>
-  <NavbarVue />
-  <h1 class="bg-red-100">hello</h1>
+  <HomeViewVue />
 </template>
 
 <style scoped></style>

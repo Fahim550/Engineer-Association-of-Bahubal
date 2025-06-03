@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --color-white: #f9fafb;
+  --color-primary: #2d4052;
+  --color-secondary: #ff6b35;
+}
+
+/* .nav-link {
+  @apply text-blue-500 hover:text-indigo-600 transition-colors font-medium;
+} */
