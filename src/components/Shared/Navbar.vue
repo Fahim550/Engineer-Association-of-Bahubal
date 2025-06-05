@@ -2,7 +2,7 @@
   <div>
     <div
       :class="[
-        'bg-blue-950 h-10 text-white flex items-center justify-between px-4 text-sm',
+        'bg-blue-950 h-10 text-white flex items-center justify-between px-4 text-sm fixed z-50 w-full transition-all duration-300',
         scrolled ? 'hidden' : 'visible',
       ]"
     >
@@ -56,28 +56,37 @@
 
     <nav
       :class="[
-        'fixed  w-full z-50 transition-all duration-100',
+        'fixed  w-full z-50 transition-all duration-300',
         scrolled
-          ? 'top-0 bg-white/20 shadow-md text-secondary font-[500]'
-          : 'top-10 bg-white/50 backdrop-blur-md text-secondary font-[500]',
+          ? 'top-0 bg-white backdrop-blur-lg shadow-md text-secondary font-[500] '
+          : 'top-10 bg-transparent  text-white font-[500] text-shadow-2xl ',
       ]"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <!-- Logo and Brand Name -->
           <div class="flex items-center">
-            <!-- <img class="h-8 w-8" src="@/assets/images/logo.png" alt="Logo" /> -->
-            <span class="ml-2 font-bold text-xl text-gray-800"
-              >Engineer Association of Bahubal</span
-            >
+            <img
+              class="h-12 w-12 bg-cover rounded-full"
+              src="../../assets/image/logo.jpg"
+              alt="Logo"
+            />
+            <span class="ml-2 font-bold text-xl">EAB</span>
           </div>
           <!-- Desktop Menu -->
-          <div class="hidden md:flex items-center space-x-2">
-            <a href="#" class="hover:text-secondary/80">Home</a>
+          <div class="hidden md:flex items-center space-x-3">
+            <!-- Home -->
+            <div class="relative group">
+              <a href="#" class="relative z-10 px-1">Home</a>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </div>
 
+            <!-- About Us -->
             <div class="relative group">
               <button
-                class="hover:text-secondary/80 focus:outline-none gap-1 flex items-center"
+                class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
               >
                 About Us
                 <svg
@@ -94,17 +103,24 @@
                   />
                 </svg>
               </button>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
+              ></span>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-light border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
+                class="absolute left-0 mt-2 w-48 bg-secondary border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
               >
-                <a href="#" class="block px-4 py-2 text-sm hover:bg-blue-950">
-                  Our Activities
-                </a>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm hover:bg-blue-950 text-white"
+                  >Our Activities</a
+                >
               </ul>
             </div>
+
+            <!-- Member -->
             <div class="relative group">
               <button
-                class="hover:text-secondary/80 focus:outline-none gap-1 flex items-center"
+                class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
               >
                 Member
                 <svg
@@ -121,22 +137,45 @@
                   />
                 </svg>
               </button>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
+              ></span>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-light border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
+                class="absolute left-0 mt-2 w-52 bg-secondary border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
               >
-                <a href="#" class="block px-4 py-2 text-sm hover:bg-blue-950"
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm hover:bg-blue-950 text-white"
                   >Membership Registration</a
                 >
-                <a href="#" class="block px-4 py-2 text-sm hover:bg-blue-950"
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm hover:bg-blue-950 text-white"
                   >How to Get Membership</a
                 >
               </ul>
             </div>
-            <a href="#" class="hover:text-secondary/80">Committees</a>
-            <a href="#" class="hover:text-secondary/80">Gallery</a>
+
+            <!-- Committees -->
+            <div class="relative group">
+              <a href="#" class="relative z-10 px-1">Committees</a>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </div>
+
+            <!-- Gallery -->
+            <div class="relative group">
+              <a href="#" class="relative z-10 px-1">Gallery</a>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </div>
+
+            <!-- News & Update -->
             <div class="relative group">
               <button
-                class="hover:text-secondary/80 focus:outline-none gap-1 flex items-center"
+                class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
               >
                 News & Update
                 <svg
@@ -153,17 +192,37 @@
                   />
                 </svg>
               </button>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
+              ></span>
               <ul
-                class="absolute left-0 mt-2 w-48 bg-light border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
+                class="absolute left-0 mt-2 w-48 bg-secondary border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
               >
-                <a class="block px-4 py-2 text-sm hover:bg-blue-950">
-                  Job Board
-                </a>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-white hover:bg-blue-950"
+                  >Job Board</a
+                >
               </ul>
             </div>
-            <a href="#" class="hover:text-secondary/80">Contact Us</a>
-            <a href="#" class="hover:text-secondary/80">Login</a>
+
+            <!-- Contact Us -->
+            <div class="relative group">
+              <a href="#" class="relative z-10 px-1">Contact Us</a>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </div>
+
+            <!-- Login -->
+            <div class="relative group">
+              <a href="#" class="relative z-10 px-1">Login</a>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </div>
           </div>
+
           <!-- Mobile Menu Button -->
           <div class="md:hidden flex items-center">
             <button
@@ -262,7 +321,7 @@ function toggleDropdown(menu) {
 }
 
 function handleScroll() {
-  scrolled.value = window.scrollY > 10;
+  scrolled.value = window.scrollY > 100;
 }
 
 onMounted(() => {

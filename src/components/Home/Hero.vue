@@ -6,13 +6,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
-import hero1 from "@/assets/image/hero1.jpg";
-import hero2 from "@/assets/image/hero2.jpeg";
+import hero4 from "@/assets/image/hero4.jpg";
+import hero2 from "@/assets/image/hero.jpg";
 import hero3 from "@/assets/image/hero3.jpg";
 
 const slides = [
   {
-    image: hero1,
+    image: hero4,
     text: "Empowering Engineers to Build the Future — Together, We Shape Innovation.",
   },
   {
@@ -25,8 +25,9 @@ const slides = [
   },
 ];
 </script>
+
 <template>
-  <div class="mt-6">
+  <div class="">
     <swiper
       :spaceBetween="30"
       :effect="'fade'"
@@ -36,10 +37,10 @@ const slides = [
         clickable: true,
       }"
       :autoplay="{
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false,
       }"
-      :modules="[EffectFade, Navigation, Pagination, Autoplay]"
+      :modules="[EffectFade, Pagination, Autoplay]"
       class="mySwiper bg-light"
     >
       <SwiperSlide v-for="(slide, index) in slides" :key="index">
@@ -51,8 +52,8 @@ const slides = [
           <div class="absolute inset-0 bg-black opacity-50"></div>
 
           <!-- Hero text content -->
-          <div class="relative z-10 text-center px-4 w-[80%]">
-            <h1 class="text-2xl md:text-3xl font-bold mb-4 text-shadow-4xl">
+          <div class="relative z-10 text-center px-4 w-[80%] pt-40">
+            <h1 class="text-3xl md:text-3xl font-bold mb-4 text-shadow-4npmxl">
               {{ slide.text }}
             </h1>
             <!-- <p class="text-lg md:text-xl max-w-2xl mx-auto">
@@ -82,19 +83,6 @@ const slides = [
           </div>
         </section>
       </SwiperSlide>
-      <!-- <swiper-slide
-        ><img
-          src="../../assets/image/hero1.jpg"
-          alt="IMG-20250512-WA0002"
-          class="bg-cover bg-center bg-no-repeat max-w-4/6 flex justify-center mx-auto"
-          border="0" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="../../assets/image/hero2.jpeg"
-          alt="IMG-20250512-WA0005"
-          class="bg-cover bg-center bg-no-repeat max-w-4/6 flex justify-center mx-auto"
-          border="0"
-      /></swiper-slide> -->
     </swiper>
   </div>
 </template>
