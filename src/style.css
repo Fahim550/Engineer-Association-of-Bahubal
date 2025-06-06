@@ -6,7 +6,50 @@
   --color-secondary: #ff5528;
   --color-yellow: #ffa415;
 }
-
+.swiper {
+  position: relative;
+  overflow: visible;
+}
+.swiper-slide {
+  background-color: transparent !important;
+  justify-content: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-secondary) !important;
+  width: 5px !important;
+  height: 10px !important;
+  position: relative;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  line-height: 20px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px; /* button hit area 30×30px */
+  height: 30px;
+  /* …other styles… */
+}
+.swiper-pagination {
+  bottom: -30px !important;
+}
+.swiper-pagination-bullet {
+  background-color: var(--color-secondary) !important;
+  width: 10px !important;
+  height: 10px !important;
+  position: relative;
+  top: 0px;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary);
+  width: 8px;
+  height: 8px;
+  position: relative;
+  top: 0px;
+}
 /* .nav-link {
   @apply text-blue-500 hover:text-indigo-600 transition-colors font-medium;
 } */

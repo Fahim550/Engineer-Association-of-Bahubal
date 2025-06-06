@@ -49,3 +49,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
+.swiper {
+  position: relative;
+  overflow: visible;
+}
+.swiper-slide {
+  background-color: transparent !important;
+  justify-content: center;
+}

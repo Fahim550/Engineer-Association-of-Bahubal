@@ -31,7 +31,9 @@ const slides = [
     <swiper
       :spaceBetween="30"
       :effect="'fade'"
-      :navigation="false"
+      :navigation="{
+        clickable: true,
+      }"
       :loop="true"
       :pagination="{
         clickable: true,
@@ -40,7 +42,7 @@ const slides = [
         delay: 3000,
         disableOnInteraction: false,
       }"
-      :modules="[EffectFade, Pagination, Autoplay]"
+      :modules="[EffectFade, Pagination, Autoplay, Navigation]"
       class="mySwiper bg-light"
     >
       <SwiperSlide v-for="(slide, index) in slides" :key="index">
