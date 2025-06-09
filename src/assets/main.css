@@ -1,37 +1,8 @@
-@import "./base.css";
 @import "tailwindcss";
+
 #app {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+  overflow: hidden;
 }
 
 @theme {
@@ -40,7 +11,6 @@ a,
   --color-secondary: #ff5528;
   --color-yellow: #ffa415;
 }
-
 .swiper {
   position: relative;
   overflow: visible;
@@ -48,4 +18,79 @@ a,
 .swiper-slide {
   background-color: transparent !important;
   justify-content: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-secondary) !important;
+  width: 5px !important;
+  height: 10px !important;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  line-height: 20px;
+}
+
+.swiper--event .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  right: -20px !important;
+  position: absolute !important;
+}
+.swiper--event .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  left: -20px !important;
+  position: absolute !important;
+}
+.swiper--hero .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  /* right: 10px !important; */
+  position: absolute !important;
+}
+.swiper--hero .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  /* left: 0px !important; */
+  position: absolute !important;
+}
+.swiper--testimonial .swiper-button-next {
+  /* color: var(--color-white) !important; */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  right: -20px !important;
+  position: absolute !important;
+  z-index: 10;
+}
+.swiper--testimonial .swiper-button-prev {
+  /* color: var(--color-white) !important; */
+  width: 30px;
+  height: 30px;
+  left: -20px !important;
+  position: absolute !important;
+}
+
+.swiper-pagination {
+  bottom: -30px !important;
+}
+.swiper-pagination-bullet {
+  background-color: var(--color-secondary) !important;
+  width: 10px !important;
+  height: 10px !important;
+  position: relative;
+  top: 0px;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary);
+  width: 8px;
+  height: 8px;
+  position: relative;
+  top: 0px;
 }

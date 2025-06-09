@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 @theme {
   --color-white: #f9fafb;
@@ -26,12 +26,20 @@
   font-size: 20px !important;
   line-height: 20px;
 }
-.swiper-button-next,
+
 .swiper-button-prev {
-  width: 30px; /* button hit area 30×30px */
+  width: 30px;
   height: 30px;
-  /* …other styles… */
+  left: -20px !important;
 }
+
+.swiper-button-next {
+  width: 30px;
+  height: 30px;
+  right: -20px !important;
+  position: absolute !important;
+}
+
 .swiper-pagination {
   bottom: -30px !important;
 }
@@ -49,7 +57,4 @@
   height: 8px;
   position: relative;
   top: 0px;
-}
-/* .nav-link {
-  @apply text-blue-500 hover:text-indigo-600 transition-colors font-medium;
 } */

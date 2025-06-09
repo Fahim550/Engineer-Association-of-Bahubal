@@ -43,7 +43,7 @@ const slides = [
         disableOnInteraction: false,
       }"
       :modules="[EffectFade, Pagination, Autoplay, Navigation]"
-      class="mySwiper bg-light"
+      class="swiper swiper--hero bg-light"
     >
       <SwiperSlide v-for="(slide, index) in slides" :key="index">
         <section
@@ -88,3 +88,19 @@ const slides = [
     </swiper>
   </div>
 </template>
+
+<style scoped>
+.swiper {
+  position: relative;
+  overflow: visible;
+}
+.swiper-slide {
+  background-color: transparent !important;
+  justify-content: center;
+}
+/* .swiper-button-next,
+.swiper-button-prev {
+  width: 30px;
+  height: 30px;
+} */
+</style>

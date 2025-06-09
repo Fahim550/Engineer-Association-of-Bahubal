@@ -69,19 +69,19 @@ const events = [
 </script>
 
 <template>
-  <section class="py-16 bg-gray-100">
+  <section class="py-16 bg-gray-100 overflow-hidden">
     <div class="container mx-auto text-center mb-12">
-      <h2 class="text-3xl font-bold text-gray-800">Upcoming Events</h2>
+      <h2 class="text-3xl font-bold text-primary">Events</h2>
       <p class="text-gray-600 mt-2">
         Stay updated with our latest events and workshops!
       </p>
     </div>
 
-    <div class="w-full py-10 px-4 overflow-hidden">
+    <div class="w-full py-10 px-10">
       <Swiper
         :modules="[Navigation, Pagination, Keyboard, Autoplay]"
         :slides-per-view="1"
-        :space-between="20"
+        :space-between="40"
         :loop="true"
         :autoplay="{ delay: 50000, disableOnInteraction: false }"
         :keyboard="{ enabled: true }"
@@ -94,7 +94,7 @@ const events = [
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }"
-        class="w-full h-[300px]"
+        class="w-full h-[300px] swiper swiper--event"
       >
         <SwiperSlide
           v-for="event in events"
@@ -121,7 +121,7 @@ const events = [
 
             <!-- Back side -->
             <div
-              class="absolute inset-0 bg-yellow rounded-lg shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] p-6"
+              class="absolute inset-0 bg-gradient-to-r from-secondary to-yellow rounded-lg shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] p-6"
             >
               <h2 class="text-[1.2rem] font-semibold text-white mb-3">
                 {{ event.title }}
@@ -153,5 +153,18 @@ const events = [
 .swiper-slide {
   background-color: transparent !important;
   justify-content: center;
+}
+
+.swiper--event .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  right: -20px !important;
+  position: absolute !important;
+}
+.swiper--event .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  left: -25px !important;
+  position: absolute !important;
 }
 </style>
