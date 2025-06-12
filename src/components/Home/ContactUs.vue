@@ -58,17 +58,16 @@ const submitForm = async () => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Contact Info -->
         <div class="bg-white shadow-lg rounded-lg p-8">
-          <h3 class="text-xl font-semibold text-gray-800 mb-4">
-            Contact Information
-          </h3>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Contact Us</h3>
           <p class="text-gray-600 mb-6">
-            We’d love to hear from you. Reach out with any questions or
-            feedback.
+            Have a question, suggestion, or just want to say hello? We'd love to
+            hear from you! Feel free to reach out — we're here to help and
+            connect.
           </p>
           <ul class="space-y-6">
             <li class="flex items-start">
               <svg
-                class="w-6 h-6 flex-shrink-0 text-indigo-600 mr-3"
+                class="w-6 h-6 flex-shrink-0 text-secondary mr-3"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -83,7 +82,7 @@ const submitForm = async () => {
             </li>
             <li class="flex items-start">
               <svg
-                class="w-6 h-6 flex-shrink-0 text-indigo-600 mr-3"
+                class="w-6 h-6 flex-shrink-0 text-secondary mr-3"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -98,7 +97,7 @@ const submitForm = async () => {
             </li>
             <li class="flex items-start">
               <svg
-                class="w-6 h-6 flex-shrink-0 text-indigo-600 mr-3"
+                class="w-6 h-6 flex-shrink-0 text-secondary mr-3"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -159,16 +158,7 @@ const submitForm = async () => {
               v-model="message"
             ></textarea>
           </div>
-          <div class="flex items-center">
-            <input
-              id="newsletter"
-              type="checkbox"
-              class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-            />
-            <label for="newsletter" class="ml-2 text-gray-600 text-sm"
-              >Send me your newsletter!</label
-            >
-          </div>
+
           <button
             type="submit"
             class="w-full bg-gradient-to-r from-secondary to-yellow text-white font-medium py-3 rounded-lg hover:bg-gradient-to-l transition cursor-pointer"

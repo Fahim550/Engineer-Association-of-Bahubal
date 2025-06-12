@@ -111,7 +111,7 @@
               >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm hover:bg-blue-950 text-white"
+                  class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-yellow hover:to-secondary text-white"
                   >Our Activities</a
                 >
               </ul>
@@ -145,12 +145,12 @@
               >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm hover:bg-blue-950 text-white"
+                  class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-yellow hover:to-secondary text-white"
                   >Membership Registration</a
                 >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm hover:bg-blue-950 text-white"
+                  class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-yellow hover:to-secondary text-white"
                   >How to Get Membership</a
                 >
               </ul>
@@ -200,7 +200,7 @@
               >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm text-white hover:bg-blue-950"
+                  class="block px-4 py-2 text-sm text-white hover:bg-gradient-to-r hover:from-yellow hover:to-secondary"
                   >Job Board</a
                 >
               </ul>

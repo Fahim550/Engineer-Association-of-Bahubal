@@ -1,4 +1,4 @@
-<script>
+<script setup>
 // Update copyright year
 const currentYear = new Date().getFullYear();
 
@@ -15,38 +15,44 @@ document.addEventListener("mousemove", (e) => {
     class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden"
   >
     <!-- Animated background elements -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-30">
       <div
-        class="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full filter blur-3xl animate-float1"
+        class="absolute top-20 left-10 w-32 h-32 bg-yellow rounded-full filter blur-3xl animate-float1"
       ></div>
       <div
-        class="absolute top-40 right-20 w-40 h-40 bg-purple-500 rounded-full filter blur-3xl animate-float2"
+        class="absolute top-40 right-20 w-40 h-40 bg-secondary rounded-full filter blur-3xl animate-float2"
       ></div>
       <div
-        class="absolute bottom-10 left-1/2 w-48 h-48 bg-cyan-500 rounded-full filter blur-3xl animate-float3"
+        class="absolute bottom-10 left-1/2 w-48 h-48 bg-yellow rounded-full filter blur-3xl animate-float3"
       ></div>
     </div>
 
     <!-- Main footer content -->
-    <div class="relative max-w-7xl mx-auto px-6 py-16 sm:py-20 lg:px-8">
+    <div class="relative max-w-7xl mx-auto px-6 py-6 sm:py-10 lg:px-8">
       <!-- Grid layout -->
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
         <!-- Logo/Name section with interactive effect -->
         <div class="group">
           <div class="flex items-center space-x-2 mb-6">
             <div
-              class="w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition duration-500"
+              class="w-10 h-10 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition duration-500"
             >
-              <span class="text-xl font-bold">MD</span>
+              <!-- <span class="text-xl font-bold">MD</span> -->
+              <img
+                src="../../assets/image/logo.jpg"
+                class="rounded-full"
+                alt=""
+              />
             </div>
             <h2
-              class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500"
+              class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary to-yellow"
             >
-              Manuel Dala
+              EAB
             </h2>
           </div>
           <p class="text-gray-300 mb-6">
-            Innovating digital experiences one line of code at a time.
+            Empowering innovation through clean, efficient, and impactful web
+            solutions.
           </p>
 
           <!-- Social media with hover glow -->
@@ -92,7 +98,7 @@ document.addEventListener("mousemove", (e) => {
               class="absolute bottom-0 left-0 w-full h-1 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"
             ></span>
           </h3>
-          <ul class="space-y-3">
+          <ul class="space-y-2">
             <li>
               <a
                 href="#"
@@ -112,7 +118,7 @@ document.addEventListener("mousemove", (e) => {
                 <span
                   class="w-1 h-1 bg-blue-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"
                 ></span>
-                Projects</a
+                About Us</a
               >
             </li>
             <li>
@@ -123,7 +129,7 @@ document.addEventListener("mousemove", (e) => {
                 <span
                   class="w-1 h-1 bg-blue-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"
                 ></span>
-                Services</a
+                Members</a
               >
             </li>
             <li>
@@ -134,7 +140,29 @@ document.addEventListener("mousemove", (e) => {
                 <span
                   class="w-1 h-1 bg-blue-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"
                 ></span>
-                Blog</a
+                Committees</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
+              >
+                <span
+                  class="w-1 h-1 bg-blue-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"
+                ></span>
+                Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
+              >
+                <span
+                  class="w-1 h-1 bg-blue-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"
+                ></span>
+                Contact Us</a
               >
             </li>
           </ul>
@@ -150,7 +178,7 @@ document.addEventListener("mousemove", (e) => {
                   class="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center animate-pulse"
                 >
                   <svg
-                    class="w-4 h-4 text-blue-400"
+                    class="w-4 h-4 text-secondary"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -168,7 +196,7 @@ document.addEventListener("mousemove", (e) => {
                 <p class="text-sm text-gray-300">Email</p>
                 <a
                   href="mailto:manueljosedala@hotmail.com"
-                  class="text-white hover:text-blue-400 transition"
+                  class="text-white hover:text-secondary transition"
                   >manueljosedala@hotmail.com</a
                 >
               </div>
@@ -180,7 +208,7 @@ document.addEventListener("mousemove", (e) => {
                   style="animation-delay: 0.2s"
                 >
                   <svg
-                    class="w-4 h-4 text-blue-400"
+                    class="w-4 h-4 text-secondary"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -198,7 +226,7 @@ document.addEventListener("mousemove", (e) => {
                 <p class="text-sm text-gray-300">Phone</p>
                 <a
                   href="tel:+244941540352"
-                  class="text-white hover:text-blue-400 transition"
+                  class="text-white hover:text-secondary transition"
                   >+244 941 540 352</a
                 >
               </div>
@@ -217,11 +245,11 @@ document.addEventListener("mousemove", (e) => {
               <input
                 type="email"
                 placeholder="Your email"
-                class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-500 text-white"
+                class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent placeholder-gray-500 text-white"
               />
               <button
                 type="submit"
-                class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-4 py-1 transition"
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-secondary to-yellow hover:bg-blue-600 text-white rounded-lg px-4 py-1 transition cursor-pointer"
               >
                 <svg
                   class="w-5 h-5"
@@ -244,12 +272,11 @@ document.addEventListener("mousemove", (e) => {
 
       <!-- Bottom section with animated copyright -->
       <div
-        class="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+        class="mt-6 pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
       >
         <p class="text-gray-400 text-sm mb-4 md:mb-0">
-          &copy;
-          <span id="year" class="text-blue-400">{{ currentYear }}</span> Manuel
-          Dala. All rights reserved.
+          &copy; {{ currentYear }} Engineers Association of Bahubal. All rights
+          reserved.
         </p>
         <div class="flex space-x-6">
           <a href="#" class="text-gray-400 hover:text-white transition"

@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import AboutUs from '../Views/AboutView.vue'
 import HomeView from '../Views/HomeView.vue'
 
 const router = createRouter({
@@ -8,6 +9,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: AboutUs,
     },
 ]
 //   scrollBehavior (to, from, savedPosition) {
