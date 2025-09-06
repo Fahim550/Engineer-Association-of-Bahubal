@@ -161,7 +161,7 @@ const submitForm = async () => {
 
           <button
             type="submit"
-            class="w-full bg-gradient-to-r from-secondary to-yellow text-white font-medium py-3 rounded-lg hover:bg-gradient-to-l transition cursor-pointer"
+            class="w-full bg-gradient-to-r from-secondary to-accent text-white font-medium py-3 rounded-lg hover:bg-gradient-to-l transition cursor-pointer"
           >
             Send Message
           </button>

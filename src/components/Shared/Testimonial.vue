@@ -67,7 +67,7 @@ const testimonials = [
         <SwiperSlide
           v-for="testimonial in testimonials"
           :key="testimonial.id"
-          class="relative bg-gradient-to-r from-secondary to-yellow rounded-xl shadow-lg p-6 sm:p-8 text-white"
+          class="relative bg-gradient-to-r from-secondary to-accent rounded-xl shadow-lg p-6 sm:p-8 text-white min-h-[300px]"
         >
           <div
             class="absolute top-0 left-0 w-full h-full bg-white opacity-10 transform -skew-x-12"

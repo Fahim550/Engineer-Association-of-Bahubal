@@ -24,7 +24,7 @@ import bgImg from "../../assets/image/whoweare.jpeg";
           <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
         </div>
         <div
-          class="order-1 bg-white text-primary hover:text-white rounded-lg shadow-md w-5/12 px-6 relative overflow-hidden group cursor-pointer before:border-purple-400 before:border-l-4 before:h-[160px] before:absolute before:left-0 before:z-[-1] hover:before:scale-[250] before:transition-all before:ease-out before:duration-[500ms] z-[0]"
+          class="order-1 bg-white text-primary hover:text-white rounded-lg shadow-md w-5/12 px-6 relative overflow-hidden group cursor-pointer before:border-purple-400 before:border-l-4 before:h-[160px] before:absolute before:left-0 before:z-[-1] hover:before:scale-[280] before:transition-all before:ease-out before:duration-[600ms] z-[0]"
         >
           <div class="py-4">
             <h3 class="mb-3 font-bold text-xl">Empowering Engineers</h3>
@@ -46,7 +46,7 @@ import bgImg from "../../assets/image/whoweare.jpeg";
           <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
         </div>
         <div
-          class="order-1 bg-white text-primary hover:text-white rounded-lg shadow-md w-5/12 px-6 relative overflow-hidden group cursor-pointer before:border-orange-400 before:border-r-4 before:h-[160px] before:absolute before:right-0 before:z-[-1] hover:before:scale-[250] before:transition-all before:ease-out before:duration-[500ms] z-[0]"
+          class="order-1 bg-white text-primary hover:text-white rounded-lg shadow-md w-5/12 px-6 relative overflow-hidden group cursor-pointer before:border-orange-400 before:border-r-4 before:h-[160px] before:absolute before:right-0 before:z-[-1] hover:before:scale-[280] before:transition-all before:ease-out before:duration-[600ms] z-[0]"
         >
           <div class="py-4">
             <h3 class="mb-3 font-bold text-xl">Guiding Students</h3>
@@ -66,7 +66,7 @@ import bgImg from "../../assets/image/whoweare.jpeg";
           <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
         </div>
         <div
-          class="order-1 bg-white text-primary hover:text-white rounded-lg shadow-md w-5/12 px-6 relative overflow-hidden group cursor-pointer before:border-blue-400 before:border-l-4 before:h-[160px] before:absolute before:left-0 before:z-[-1] hover:before:scale-[250] before:transition-all before:ease-out before:duration-[500ms] z-[0]"
+          class="order-1 bg-white text-primary hover:text-white rounded-lg shadow-md w-5/12 px-6 relative overflow-hidden group cursor-pointer before:border-blue-400 before:border-l-4 before:h-[160px] before:absolute before:left-0 before:z-[-1] hover:before:scale-[280] before:transition-all before:ease-out before:duration-[600ms] z-[0]"
         >
           <div class="py-4">
             <h3 class="mb-3 font-bold text-xl">Building Community</h3>

@@ -1,21 +1,15 @@
 <script setup>
-import hopeScl from "../../assets/image/events/hopeScl.jpg";
-import fnScl from "../../assets/image/events/fnScl.jpg";
-import ifter25 from "../../assets/image/events/ifter25.jpg";
-import covid19 from "../../assets/image/events/covid19.jpg";
-import sunshineScl from "../../assets/image/events/sunshineScl.jpg";
-import putijuriScl from "../../assets/image/events/putijuriScl.jpg";
-import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
-import {
-  Autoplay,
-  EffectFade,
-  Navigation,
-  Pagination,
-  Keyboard,
-} from "swiper/modules";
+import "swiper/css/pagination";
+import { Autoplay, Keyboard, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import covid19 from "../../assets/image/events/covid19.jpg";
+import fnScl from "../../assets/image/events/fnScl.jpg";
+import hopeScl from "../../assets/image/events/hopeScl.jpg";
+import ifter25 from "../../assets/image/events/ifter25.jpg";
+import putijuriScl from "../../assets/image/events/putijuriScl.jpg";
+import sunshineScl from "../../assets/image/events/sunshineScl.jpg";
 const events = [
   {
     id: 1,
@@ -121,7 +115,7 @@ const events = [
 
             <!-- Back side -->
             <div
-              class="absolute inset-0 bg-gradient-to-r from-secondary to-yellow rounded-lg shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] p-6"
+              class="absolute inset-0 bg-gradient-to-r from-secondary to-accent rounded-lg shadow-lg [transform:rotateY(180deg)] [backface-visibility:hidden] p-6"
             >
               <h2 class="text-[1.2rem] font-semibold text-white mb-3">
                 {{ event.title }}

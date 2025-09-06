@@ -1,35 +1,159 @@
 <script setup>
+import male from "@/assets/image/male.jpeg";
 const members = [
   {
     id: 1,
-    name: "Fahim Rahman",
-    image: "https://randomuser.me/api/portraits/men/75.jpg",
-    bio: "Frontend Developer & MERN Stack Engineer",
+    name: "Harun Or Rashid",
+    designation: "President",
+    image: male,
+    bio: "",
   },
   {
     id: 2,
-    name: "Sadia Karim",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
-    bio: "UI/UX Designer and Web Enthusiast",
+    name: "Engineer Azizur Rahman",
+    designation: "Vice President",
+    image: male,
+    bio: "",
   },
   {
     id: 3,
-    name: "Rashid Hossain",
-    image: "https://randomuser.me/api/portraits/men/67.jpg",
-    bio: "Backend Developer with Node.js and Python",
+    name: "Mostafizur Rahman Chowdhury (Asad)",
+    designation: "Vice President",
+    image: male,
+    bio: "",
   },
   {
     id: 4,
-    name: "Tania Akter",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-    bio: "Mobile App Developer using Flutter",
+    name: "Abul Fazal Rakib",
+    designation: "General Secretary",
+    image: male,
+    bio: "",
   },
+  // {
+  //   id: 5,
+  //   name: "Saifur Rahman",
+  //   designation: "Joint General Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Afzal Sultan Liju",
+  //   designation: "Joint General Secretary",
+  //   image: female,
+  //   bio: "",
+  // },
+  // {
+  //   id: 7,
+  //   name: "Nusrat Rahman Mosaddek",
+  //   designation: "Organizing Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 8,
+  //   name: "Mannan Majlum",
+  //   designation: "Assistant Organizing Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 9,
+  //   name: "Uzzal Kar Shawon",
+  //   designation: "Assistant Organizing Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 10,
+  //   name: "Md. Kamal Uddin",
+  //   designation: "Office Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 11,
+  //   name: "Shah Fazal Ali",
+  //   designation: "Finance Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 12,
+  //   name: "Tuhin Bonik",
+  //   designation: "Science & Technology Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 13,
+  //   name: "Moshiur Rahman Tanim",
+  //   designation: "Social Welfare Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 14,
+  //   name: "Shafiqul Rahman Khan",
+  //   designation: "Education & Environment Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 15,
+  //   name: "R M Rashed",
+  //   designation: "Entrepreneurship & Employment Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 16,
+  //   name: "Sajidur Rahman Shanto",
+  //   designation: "Student Affairs Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 17,
+  //   name: "Md. Gias Uddin",
+  //   designation: "Publicity & Publication Secretary",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 18,
+  //   name: "Mosharraf Ahmed",
+  //   designation: "Executive Member",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 19,
+  //   name: "Anup Robi Das",
+  //   designation: "Executive Member",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 20,
+  //   name: "Md. Junaid Ahmed",
+  //   designation: "Executive Member",
+  //   image: male,
+  //   bio: "",
+  // },
+  // {
+  //   id: 21,
+  //   name: "Fahim Rahman",
+  //   designation: "Executive Member",
+  //   image: male,
+  //   bio: "",
+  // },
 ];
 </script>
 
 <template>
-  <div class="bg-gray-100">
-    <div class="container mx-auto py-16">
+  <div class="">
+    <div class="container mx-auto py-4">
       <div class="text-3xl font-bold text-primary pb-10 flex justify-center">
         Meet Our Executive Members
       </div>
@@ -47,7 +171,7 @@ const members = [
           />
 
           <div
-            class="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
+            class="absolute top-[40%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
           >
             <h1
               class="text-[1.5rem] font-bold text-white text-center capitalize"
@@ -57,13 +181,18 @@ const members = [
             <p
               class="text-center z-[1] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-white text-[0.9rem]"
             >
+              {{ member.designation }}
+            </p>
+            <p
+              class="text-center z-[1] opacity-0 group-hover:z-20 group-hover:opacity-100 transition-all duration-700 text-white text-[0.9rem]"
+            >
               {{ member.bio }}
             </p>
-            <button
+            <!-- <button
               class="bg-gray-400 z-[1] opacity-0 group-hover:z-20 group-hover:opacity-100 px-3 py-2 mt-3 hover:bg-gray-500 transition-all duration-1000 text-white rounded-md text-[0.9rem]"
             >
               View Details
-            </button>
+            </button> -->
           </div>
 
           <div

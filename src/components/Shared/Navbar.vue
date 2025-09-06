@@ -65,13 +65,25 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <!-- Logo and Brand Name -->
-          <div class="flex items-center">
+          <div class="flex items-center gap-4">
             <img
               class="h-12 w-12 bg-cover rounded-full"
               src="../../assets/image/logo.jpg"
               alt="Logo"
             />
-            <span class="ml-2 font-bold text-xl">EAB</span>
+            <div class="hidden sm:block">
+              <h1 class="text-lg font-bold text-foreground">
+                Engineer Association
+              </h1>
+              <p
+                :class="[
+                  'text-xs ',
+                  scrolled ? 'text-gray-800' : 'text-gray-200',
+                ]"
+              >
+                of Bahubal
+              </p>
+            </div>
           </div>
           <!-- Desktop Menu -->
           <div class="hidden md:flex items-center space-x-3">
@@ -111,7 +123,7 @@
               >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-yellow hover:to-secondary text-white"
+                  class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-accent hover:to-secondary text-white"
                   >Our Activities</a
                 >
               </ul>
@@ -145,12 +157,12 @@
               >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-yellow hover:to-secondary text-white"
+                  class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-accent hover:to-secondary text-white"
                   >Membership Registration</a
                 >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-yellow hover:to-secondary text-white"
+                  class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-accent hover:to-secondary text-white"
                   >How to Get Membership</a
                 >
               </ul>
@@ -200,7 +212,7 @@
               >
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm text-white hover:bg-gradient-to-r hover:from-yellow hover:to-secondary"
+                  class="block px-4 py-2 text-sm text-white hover:bg-gradient-to-r hover:from-accent hover:to-secondary"
                   >Job Board</a
                 >
               </ul>

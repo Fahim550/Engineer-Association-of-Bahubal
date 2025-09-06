@@ -17,13 +17,13 @@ document.addEventListener("mousemove", (e) => {
     <!-- Animated background elements -->
     <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-30">
       <div
-        class="absolute top-20 left-10 w-32 h-32 bg-yellow rounded-full filter blur-3xl animate-float1"
+        class="absolute top-20 left-10 w-32 h-32 bg-accent rounded-full filter blur-3xl animate-float1"
       ></div>
       <div
         class="absolute top-40 right-20 w-40 h-40 bg-secondary rounded-full filter blur-3xl animate-float2"
       ></div>
       <div
-        class="absolute bottom-10 left-1/2 w-48 h-48 bg-yellow rounded-full filter blur-3xl animate-float3"
+        class="absolute bottom-10 left-1/2 w-48 h-48 bg-accent rounded-full filter blur-3xl animate-float3"
       ></div>
     </div>
 
@@ -45,7 +45,7 @@ document.addEventListener("mousemove", (e) => {
               />
             </div>
             <h2
-              class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary to-yellow"
+              class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary to-accent"
             >
               EAB
             </h2>
@@ -249,7 +249,7 @@ document.addEventListener("mousemove", (e) => {
               />
               <button
                 type="submit"
-                class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-secondary to-yellow hover:bg-blue-600 text-white rounded-lg px-4 py-1 transition cursor-pointer"
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-secondary to-accent hover:bg-blue-600 text-white rounded-lg px-4 py-1 transition cursor-pointer"
               >
                 <svg
                   class="w-5 h-5"

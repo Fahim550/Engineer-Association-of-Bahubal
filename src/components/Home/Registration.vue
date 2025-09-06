@@ -17,7 +17,7 @@ import bgImg from "../../assets/image/office.jpg";
         একটি অরাজনৈতিক অলাভজনক স্বেচ্ছাসেবী পেশাজীবী সংগঠন।
       </h2>
       <button
-        className="relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-mono tracking-tighter text-white bg-yellow rounded-lg group cursor-pointer"
+        className="relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-mono tracking-tighter text-white bg-accent rounded-lg group cursor-pointer"
       >
         <span
           className="absolute w-0 h-0 transition-all duration-500 ease-out bg-secondary rounded-full group-hover:w-56 group-hover:h-56"
