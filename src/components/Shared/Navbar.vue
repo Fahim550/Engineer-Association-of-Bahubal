@@ -89,7 +89,7 @@
           <div class="hidden md:flex items-center space-x-3">
             <!-- Home -->
             <div class="relative group">
-              <a href="#" class="relative z-10 px-1">Home</a>
+              <RouterLink to="/" class="relative z-10 px-1">Home</RouterLink>
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>
@@ -97,7 +97,8 @@
 
             <!-- About Us -->
             <div class="relative group">
-              <button
+              <RouterLink
+                to="/about"
                 class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
               >
                 About Us
@@ -114,7 +115,7 @@
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </button>
+              </RouterLink>
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>

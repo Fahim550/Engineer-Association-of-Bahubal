@@ -10,6 +10,9 @@
   --color-primary: #2d4052;
   --color-secondary: #ff5528;
   --color-accent: #ffa415;
+  /* --card: hsl(0 0% 100%); */
+  /* --bg-white: hsl(220 14% 96%); */
+  /* --background: var(--bg-white); */
 }
 .swiper {
   position: relative;

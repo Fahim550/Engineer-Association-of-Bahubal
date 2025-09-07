@@ -51,7 +51,7 @@ const slides = [
           :style="`background-image: url(${slide.image})`"
         >
           <!-- Black overlay -->
-          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
           <div
             class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/50"
           ></div>
@@ -97,7 +97,9 @@ const slides = [
                   <button
                     class="text-lg px-6 py-2 bg-secondary hover:bg-secondary/90 text-white relative rounded-xl cursor-pointer"
                   >
-                    <a class="flex justify-center items-center text-lg font-semibold">
+                    <a
+                      class="flex justify-center items-center text-lg font-semibold"
+                    >
                       Join EAB Today
                       <ArrowRight class="ml-2 h-5 w-5" />
                     </a>
@@ -106,7 +108,7 @@ const slides = [
                     size="lg"
                     class="text-lg font-semibold px-8 py-4 bg-white/80 border-secondary text-primary hover:bg-secondary hover:text-white rounded-xl cursor-pointer"
                   >
-                    <link to="/about"> Learn More </link>
+                    <RouterLink to="/about"> Learn More </RouterLink>
                   </button>
                 </div>
               </div>
