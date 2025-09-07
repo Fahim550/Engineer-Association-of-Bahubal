@@ -1,6 +1,5 @@
 <script setup>
 import ContactUs from "@/components/Home/ContactUs.vue";
-import Founders from "@/components/Home/Founders.vue";
 import Members from "@/components/Home/Members.vue";
 import Testimonial from "@/components/Home/Testimonial.vue";
 import About from "../components/Home/AboutUs.vue";
@@ -8,6 +7,7 @@ import Events from "../components/Home/Events.vue";
 import Hero from "../components/Home/Hero.vue";
 import OurMission from "../components/Home/OurMission.vue";
 import Registration from "../components/Home/Registration.vue";
+import Gallery from "@/components/Shared/Gallery.vue";
 </script>
 
 <template>
@@ -16,8 +16,9 @@ import Registration from "../components/Home/Registration.vue";
   <Events />
   <OurMission />
   <Registration />
-  <Founders />
+  <!-- <Founders /> -->
   <Members />
   <Testimonial />
+  <Gallery/>
   <ContactUs />
 </template>

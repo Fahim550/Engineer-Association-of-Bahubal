@@ -136,6 +136,14 @@ const events = [
         </SwiperSlide>
       </Swiper>
     </div>
+    <div class="flex justify-center items-center">
+      <RouterLink
+        to="/about"
+        class="flex items-center px-4 py-2 rounded-xl bg-gradient-to-r from-secondary to-accent text-white shadow-medium text-lg font-medium hover:opacity-90 transition"
+      >
+        View All Events
+      </RouterLink>
+    </div>
   </section>
 </template>
 

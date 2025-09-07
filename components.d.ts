@@ -14,6 +14,7 @@ declare module 'vue' {
     Events: typeof import('./src/components/Home/Events.vue')['default']
     Footer: typeof import('./src/components/Shared/Footer.vue')['default']
     Founders: typeof import('./src/components/Home/Founders.vue')['default']
+    Gallery: typeof import('./src/components/Shared/Gallery.vue')['default']
     Hero: typeof import('./src/components/Home/Hero.vue')['default']
     Members: typeof import('./src/components/Home/Members.vue')['default']
     Navbar: typeof import('./src/components/Shared/Navbar.vue')['default']

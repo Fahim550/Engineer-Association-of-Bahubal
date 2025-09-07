@@ -1,5 +1,6 @@
 <script setup>
 import male from "@/assets/image/male.jpeg";
+import Founders from "./Founders.vue";
 const members = [
   {
     id: 1,
@@ -152,8 +153,9 @@ const members = [
 </script>
 
 <template>
-  <div class="">
-    <div class="container mx-auto py-4">
+  <div class="py-5">
+    <Founders />
+    <div class="container mx-auto py-6">
       <div class="text-3xl font-bold text-primary pb-10 flex justify-center">
         Meet Our Executive Members
       </div>
@@ -200,6 +202,14 @@ const members = [
           ></div>
         </div>
       </div>
+    </div>
+    <div class="flex justify-center items-center">
+      <RouterLink
+        to="/about"
+        class="flex items-center px-4 py-2 rounded-xl bg-gradient-to-r from-secondary to-accent text-white shadow-medium text-lg font-medium hover:opacity-90 transition"
+      >
+        View Members
+      </RouterLink>
     </div>
   </div>
 </template>
