@@ -17,7 +17,7 @@ import { Award, Clock, Lightbulb, Target, Users } from "lucide-vue-next";
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          class="bg-card rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300"
+          class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           <div
             class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4"
@@ -35,7 +35,7 @@ import { Award, Clock, Lightbulb, Target, Users } from "lucide-vue-next";
         </div>
 
         <div
-          class="bg-card rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300"
+          class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           <div
             class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4"
@@ -52,7 +52,7 @@ import { Award, Clock, Lightbulb, Target, Users } from "lucide-vue-next";
         </div>
 
         <div
-          class="bg-card rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300"
+          class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           <div
             class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4"
@@ -69,7 +69,7 @@ import { Award, Clock, Lightbulb, Target, Users } from "lucide-vue-next";
         </div>
 
         <div
-          class="bg-card rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300"
+          class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           <div
             class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4"
@@ -86,7 +86,7 @@ import { Award, Clock, Lightbulb, Target, Users } from "lucide-vue-next";
         </div>
 
         <div
-          class="bg-card rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300"
+          class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           <div
             class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4"
@@ -103,7 +103,7 @@ import { Award, Clock, Lightbulb, Target, Users } from "lucide-vue-next";
         </div>
 
         <div
-          class="bg-card rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300"
+          class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
         >
           <div
             class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4"
