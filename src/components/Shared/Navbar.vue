@@ -132,7 +132,8 @@
 
             <!-- Member -->
             <div class="relative group">
-              <button
+              <RouterLink
+                to="/membership"
                 class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
               >
                 Member
@@ -149,18 +150,20 @@
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </button>
+              </RouterLink>
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>
               <ul
                 class="absolute left-0 mt-2 w-52 bg-secondary border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
               >
-                <a
-                  href="#"
+                <RouterLink
+                  to="membership-registration"
                   class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-accent hover:to-secondary text-white"
-                  >Membership Registration</a
                 >
+                  Membership Registration
+                </RouterLink>
+
                 <a
                   href="#"
                   class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-accent hover:to-secondary text-white"
@@ -322,6 +325,7 @@
 
 <script setup>
 import { onBeforeUnmount, onMounted, reactive, ref } from "vue";
+import { RouterLink } from "vue-router";
 
 const isMobileMenuOpen = ref(false);
 const scrolled = ref(false);

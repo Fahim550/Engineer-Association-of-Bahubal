@@ -22,6 +22,7 @@ declare module 'vue' {
     Hero: typeof import('./src/components/Home/Hero.vue')['default']
     MeetToLeadership: typeof import('./src/components/About/MeetToLeadership.vue')['default']
     Members: typeof import('./src/components/Home/Members.vue')['default']
+    MemberShipForm: typeof import('./src/components/Members/MemberShipForm.vue')['default']
     MembersModal: typeof import('./src/components/Committees/MembersModal.vue')['default']
     MissionVission: typeof import('./src/components/About/MissionVission.vue')['default']
     Navbar: typeof import('./src/components/Shared/Navbar.vue')['default']

@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import AboutUs from '../Views/AboutView.vue'
 import CommitteesView from '../Views/CommitteesView.vue'
 import HomeView from '../Views/HomeView.vue'
+import MemberShipRegistration from '../Views/MemberShipRegistration.vue'
+import MembersView from '../Views/MembersView.vue'
 
 
 const router = createRouter({
@@ -20,7 +22,7 @@ const router = createRouter({
     {
       path: '/membership',
       name: 'membership',
-      component: AboutUs,
+      component: MembersView,
     },
     {
       path: '/committees',
@@ -31,6 +33,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: AboutUs,
+    },
+    {
+      path: '/membership-registration',
+      name: 'membership-registration',
+      component: MemberShipRegistration,
     },
 ]
 //   scrollBehavior (to, from, savedPosition) {
