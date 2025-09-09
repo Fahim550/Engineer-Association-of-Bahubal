@@ -184,7 +184,9 @@
 
             <!-- Gallery -->
             <div class="relative group">
-              <a href="#" class="relative z-10 px-1">Gallery</a>
+              <RouterLink to="/gallery" class="relative z-10 px-1"
+                >Gallery</RouterLink
+              >
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>

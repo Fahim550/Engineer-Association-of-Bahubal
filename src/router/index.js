@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutUs from '../Views/AboutView.vue'
 import CommitteesView from '../Views/CommitteesView.vue'
+import GalleryView from '../Views/GalleryView.vue'
 import HomeView from '../Views/HomeView.vue'
 import MemberShipRegistration from '../Views/MemberShipRegistration.vue'
 import MembersView from '../Views/MembersView.vue'
@@ -39,6 +40,12 @@ const router = createRouter({
       name: 'membership-registration',
       component: MemberShipRegistration,
     },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      component: GalleryView,
+    },
+
 ]
 //   scrollBehavior (to, from, savedPosition) {
 //     return { top: 0 };
