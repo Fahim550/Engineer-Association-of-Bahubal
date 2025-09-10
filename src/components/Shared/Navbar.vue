@@ -194,7 +194,7 @@
 
             <!-- News & Update -->
             <div class="relative group">
-              <button
+              <RouterLink to="news-update"
                 class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
               >
                 News & Update
@@ -211,7 +211,7 @@
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </button>
+              </RouterLink>
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>
@@ -228,7 +228,7 @@
 
             <!-- Contact Us -->
             <div class="relative group">
-              <a href="#" class="relative z-10 px-1">Contact Us</a>
+              <RouterLink to="contact-us" class="relative z-10 px-1">Contact Us</RouterLink>
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>

@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutUs from '../Views/AboutView.vue'
 import CommitteesView from '../Views/CommitteesView.vue'
+import ContactView from '../Views/ContactView.vue'
 import GalleryView from '../Views/GalleryView.vue'
 import HomeView from '../Views/HomeView.vue'
+import JobBoardView from '../Views/JobBoardView.vue'
 import MemberShipRegistration from '../Views/MemberShipRegistration.vue'
 import MembersView from '../Views/MembersView.vue'
 
@@ -44,6 +46,16 @@ const router = createRouter({
       path: '/gallery',
       name: 'gallery',
       component: GalleryView,
+    },
+    {
+      path: '/news-update',
+      name: 'news-update',
+      component: JobBoardView,
+    },
+    {
+      path: '/contact-us',
+      name: 'contact-us',
+      component: ContactView,
     },
 
 ]

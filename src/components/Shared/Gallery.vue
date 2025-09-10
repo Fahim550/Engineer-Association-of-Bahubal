@@ -3,7 +3,7 @@
 <template>
   <section class="bg-white py-10">
     <h2
-      class="text-3xl font-bold text-primary flex justify-center items-center pb-8"
+      class="text-3xl font-bold text-secondary flex justify-center items-center pb-8"
     >
       Gallery
     </h2>

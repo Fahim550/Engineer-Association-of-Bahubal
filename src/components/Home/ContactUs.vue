@@ -1,4 +1,5 @@
 <script setup>
+import { Send } from "lucide-vue-next";
 import { ref } from "vue";
 
 const WEB3FORMS_ACCESS_KEY = "62e1b28a-e6f5-4aec-9f6d-f9a81a93b5ba";
@@ -52,8 +53,8 @@ const submitForm = async () => {
 <template>
   <section class="bg-gray-100 py-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12">
-        Get In Touch
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+        Get In  <span class="text-secondary"> Touch </span>
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Contact Info -->
@@ -159,12 +160,14 @@ const submitForm = async () => {
             ></textarea>
           </div>
 
-          <button
-            type="submit"
-            class="w-full bg-gradient-to-r from-secondary to-accent text-white font-medium py-3 rounded-lg hover:bg-gradient-to-l transition cursor-pointer"
-          >
-            Send Message
-          </button>
+         <button
+    type="submit"
+    class="group w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-secondary to-accent text-white font-medium py-3 rounded-lg hover:bg-gradient-to-l transition transform cursor-pointer"
+    aria-label="Send message"
+  >
+    Send Message
+    <Send class="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+  </button>
           <p v-if="status" class="mt-2 text-center text-sm">{{ status }}</p>
         </form>
       </div>

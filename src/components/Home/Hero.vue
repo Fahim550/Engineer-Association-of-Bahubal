@@ -106,7 +106,7 @@ const slides = [
                   </button>
                   <button
                     size="lg"
-                    class="text-lg font-semibold px-8 py-4 bg-white/80 border-secondary text-primary hover:bg-secondary hover:text-white rounded-xl cursor-pointer"
+                    class="text-lg font-semibold px-8 py-4 bg-white/80 border-secondary text-primary hover:bg-primary hover:text-white rounded-xl cursor-pointer"
                   >
                     <RouterLink to="/about"> Learn More </RouterLink>
                   </button>

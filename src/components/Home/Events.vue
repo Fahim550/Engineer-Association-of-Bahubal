@@ -1,4 +1,5 @@
 <script setup>
+import { ArrowRight } from "lucide-vue-next";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -65,7 +66,7 @@ const events = [
 <template>
   <section class="py-16 bg-gray-100 overflow-hidden">
     <div class="container mx-auto text-center mb-12">
-      <h2 class="text-3xl font-bold text-primary">Events</h2>
+      <h2 class="text-3xl font-bold text-secondary">Events</h2>
       <p class="text-gray-600 mt-2">
         Stay updated with our latest events and workshops!
       </p>
@@ -138,10 +139,11 @@ const events = [
     </div>
     <div class="flex justify-center items-center">
       <RouterLink
-        to="/about"
-        class="flex items-center px-4 py-2 rounded-xl bg-gradient-to-r from-secondary to-accent text-white shadow-medium text-lg font-medium hover:opacity-90 transition"
+        to="/gallery"
+        class="inline-flex items-center px-4 py-2 rounded-xl bg-gradient-to-r from-secondary to-accent text-white shadow-medium text-lg font-medium hover:opacity-90 transition transform cursor-pointer group  "
       >
         View All Events
+        <ArrowRight class="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
       </RouterLink>
     </div>
   </section>

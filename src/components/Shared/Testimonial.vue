@@ -44,7 +44,7 @@ const testimonials = [
 <template>
   <div class="bg-gray-100 py-10">
     <div class="container mx-auto px-8 py-10 sm:px-6 lg:px-8 overflow-hidden">
-      <h1 class="text-3xl font-bold text-primary pb-10 text-center">
+      <h1 class="text-3xl font-bold text-secondary pb-10 text-center">
         Testimonial
       </h1>
 

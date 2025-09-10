@@ -8,11 +8,10 @@ import bgImg from "../../assets/image/whoweare.jpeg";
     :style="`background-image: url(${bgImg})`"
   >
     <div class="relative wrap overflow-hidden container mx-auto">
-      <h1
-        class="text-3xl font-bold text-secondary mb-4 flex justify-center pb-6"
-      >
-        Our Mission in Action
-      </h1>
+      <h1 class="text-3xl font-bold text-primary mb-4 flex justify-center items-center gap-4 pb-6">
+  <span>Our Mission in</span>
+  <span class="text-secondary">Action</span>
+</h1>
       <div
         class="border-2-2 absolute border-opacity-20 border-secondary h-full border left-1/2"
       ></div>
