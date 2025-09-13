@@ -109,14 +109,14 @@ import { RouterLink } from "vue-router";
           class="relative"
         >
           <div
-            class="aspect-square bg-gradient-to-br from-accent/50 to-secondary/20 rounded-3xl p-8"
+            class="aspect-square bg-gradient-to-br from-accent/50 to-secondary/20 rounded-3xl p-4 sm:p-8"
           >
             <div
               class="w-full h-full bg-gray-50 rounded-2xl shadow-strong flex items-center justify-center"
             >
               <div class="text-center space-y-6">
                 <div
-                  class="w-40 h-40 bg-gradient-to-br from-accent to-secondary shadow-md shadow-accent rounded-full mx-auto flex items-center justify-center"
+                  class="w-20 h-20 sm:w-40 sm:h-40 bg-gradient-to-br from-accent to-secondary shadow-md shadow-accent rounded-full mx-auto flex items-center justify-center"
                 >
                   <img
                     class="h-full w-full bg-cover rounded-full"

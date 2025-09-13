@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full mx-auto">
+  <div class="w-full mx-auto ">
     <!-- Optional Hero (uses bgImg, eyebrow, stats props) -->
     <section
-      class="relative overflow-hidden mb-8 rounded-lg py-10"
+      class="relative overflow-hidden mb-8 rounded-lg py-10 md:pt-15 "
       :style="
         bgImg
           ? `background-image: linear-gradient(to right, rgba(13,18,23,0.55), rgba(13,18,23,0.25)), url(${bgImg}); background-size: cover; background-position: center;`
@@ -17,18 +17,12 @@
 
       <div class="relative z-10">
         <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12 md:py-16"
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 md:py-16"
         >
-          <!-- <p
-            v-if="eyebrow"
-            class="text-sm font-semibold uppercase tracking-wide text-yellow-400 mb-2"
-          >
-            {{ eyebrow }}
-          </p> -->
 
           <h1
             id="membership-hero-title"
-            class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-white"
+            class="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight text-white"
           >
             Join
             <span class="text-secondary">Engineer</span> Association
@@ -40,17 +34,17 @@
             >
           </h1>
 
-          <p class="mt-4 text-base sm:text-lg text-white/90 max-w-3xl mx-auto">
+          <p class="mt-2 md:mt-4 text-base sm:text-lg text-white/90 max-w-3xl mx-auto line-clamp-2">
             Become part of a strong professional community in Bahubal Upazila.
             Get mentorship, attend events, and access job opportunities.
           </p>
 
           <div
-            class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+            class="mt-4 md:mt-8 flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-4"
           >
             <button
               @click="scrollToForm"
-              class="inline-flex items-center justify-center px-5 py-3 rounded-xl text-white font-semibold shadow-lg focus:outline-none focus:ring-4 focus:ring-secondary/30 transition-transform transform hover:-translate-y-0.5"
+              class="inline-flex items-center justify-center px-4 md:px-5 py-2 md:py-3  rounded-xl text-white font-semibold shadow-lg focus:outline-none focus:ring-4 focus:ring-secondary/30 transition-transform transform hover:-translate-y-0.5"
               style="background-color: var(--color-secondary)"
               aria-label="Apply for membership"
             >
@@ -59,7 +53,7 @@
 
             <button
               @click="goToMembershipPage"
-              class="inline-flex items-center justify-center px-5 py-3 rounded-xl border-2 border-white/20 text-white font-semibold bg-white/5 hover:bg-white/10 focus:outline-none focus:ring-4 focus:ring-white/20"
+              class="inline-flex items-center justify-center px-3 md:px-5 py-1 md:py-3 rounded-xl border-2 border-white/20 text-white font-semibold bg-white/5 hover:bg-white/10 focus:outline-none focus:ring-4 focus:ring-white/20"
               aria-label="Learn more about membership"
             >
               Learn More
@@ -81,7 +75,7 @@
       </div>
     </section>
 
-    <div class="container mx-auto max-w-4xl">
+    <div class="container mx-auto max-w-4xl px-6">
       <!-- header -->
       <div class="mb-6">
         <RouterLink
@@ -884,21 +878,5 @@ function goToMembershipPage() {
 </script>
 
 <style scoped>
-:root {
-  --color-white: #f9fafb;
-  --color-primary: #2d4052;
-  --color-secondary: #ff5528;
-  --color-yellow: #ffa415;
-}
 
-/* small mappings for utility classes used in template */
-.bg-primary {
-  background-color: var(--color-primary);
-}
-.text-primary {
-  color: var(--color-primary);
-}
-.text-secondary {
-  color: var(--color-secondary);
-}
 </style>

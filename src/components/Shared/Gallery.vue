@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import { ArrowRight } from 'lucide-vue-next';
+
+</script>
 
 <template>
   <section class="bg-white py-10">
@@ -112,6 +115,16 @@
           </a>
         </div>
       </div>
+    </div>
+
+    <div class="flex justify-center items-center">
+      <RouterLink
+        to="/gallery"
+        class="inline-flex items-center px-4 py-2 rounded-xl bg-gradient-to-r from-secondary to-accent text-white shadow-medium text-lg font-medium hover:opacity-90 transition transform cursor-pointer group  "
+      >
+        View All 
+        <ArrowRight class="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
+      </RouterLink>
     </div>
   </section>
 </template>

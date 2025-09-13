@@ -14,16 +14,16 @@ import { ArrowRight } from "lucide-vue-next";
         Become part of Bangladesh's premier engineering association and take
         your career to the next level.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <RouterLink
           to="/membership"
-          class="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-secondary to-accent text-white shadow-medium text-lg font-medium hover:opacity-90 transition"
+          class="inline-flex items-center w-62 px-4 py-2 md:px-6 md:py-3 rounded-xl bg-gradient-to-r from-secondary to-accent text-white shadow-medium text-lg font-medium hover:opacity-90 transition"
         >
           Apply For Membership
           <ArrowRight class="ml-2 h-4 w-4" />
         </RouterLink>
         <button
-          class="text-lg text-white rounded-xl px-8 bg-primary hover:opacity-90"
+          class="text-lg text-white rounded-xl w-40 md:px-8 py-2 md:py-3 bg-primary hover:opacity-90"
         >
           <RouterLink to="/contact"> Contact Us </RouterLink>
         </button>

@@ -46,7 +46,7 @@ const founders = [
 </script>
 <template>
   <!-- Founders Section -->
-  <section class="py-12">
+  <section class="py-12 container mx-auto px-6">
     <div class="text-center py-12">
       <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
         Our Advisors

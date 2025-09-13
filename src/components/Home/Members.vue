@@ -1,5 +1,6 @@
 <script setup>
 import male from "@/assets/image/male.jpeg";
+import { ArrowRight } from "lucide-vue-next";
 import Founders from "./Founders.vue";
 const members = [
   {
@@ -155,16 +156,16 @@ const members = [
 <template>
   <div class="py-5">
     <Founders />
-    <div class="container mx-auto py-6">
+    <div class="container px-6 mx-auto py-6">
       <div class="text-3xl font-bold text-primary pb-10 flex justify-center">
         Meet Our Executive Members
       </div>
 
-      <div class="flex gap-6 justify-center">
+      <div class=" gap-6 justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4">
         <div
           v-for="member in members"
           :key="member.id"
-          class="w-full h-[350px] relative overflow-hidden group cursor-pointer rounded-md"
+          class="w-full h-[350px] relative overflow-hidden group cursor-pointer rounded-md "
         >
           <img
             :src="member.image"
@@ -204,12 +205,15 @@ const members = [
       </div>
     </div>
     <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center">
       <RouterLink
-        to="/about"
-        class="flex items-center px-4 py-2 rounded-xl bg-gradient-to-r from-secondary to-accent text-white shadow-medium text-lg font-medium hover:opacity-90 transition"
+        to="/gallery"
+        class="inline-flex items-center px-4 py-2 rounded-xl bg-gradient-to-r from-secondary to-accent text-white shadow-medium text-lg font-medium hover:opacity-90 transition transform cursor-pointer group  "
       >
         View Members
+        <ArrowRight class="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
       </RouterLink>
+    </div>
     </div>
   </div>
 </template>

@@ -40,14 +40,14 @@ document.addEventListener("mousemove", (e) => {
               <!-- <span class="text-xl font-bold">MD</span> -->
               <img
                 src="../../assets/image/logo.jpg"
-                class="rounded-full"
+                class="rounded-full w-full h-full"
                 alt=""
               />
             </div>
             <h2
               class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-secondary to-accent"
             >
-              EAB
+              Engineer Association <span class="text-lg text-white block"> Of Bahubal</span>
             </h2>
           </div>
           <p class="text-gray-300 mb-6">

@@ -13,7 +13,7 @@ const props = defineProps({
 
 <template>
   <section
-    class="relative py-24 bg-gradient-to-r from-accent/70 via-primary to-gray-900 text-white overflow-hidden"
+    class="relative pt-28 pb-10 bg-gradient-to-r from-accent/70 via-primary to-gray-900 text-white overflow-hidden"
     aria-labelledby="committee-hero-title"
   >
     <div
@@ -26,10 +26,10 @@ const props = defineProps({
         id="committee-hero-title"
         class="text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg"
       >
-        {{ titleBefore }} <span class="text-secondary"> {{ titleHighlight }}</span>
+        {{ titleBefore }} <span class="text-secondary"> {{ titleHighlight }}</span> {{ titleAfter }}
       </h1>
       <p
-        class="text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90"
+        class="text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90 line-clamp-3"
       >
          {{ subtitle }}
       </p>

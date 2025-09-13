@@ -6,7 +6,7 @@ import { ref } from "vue";
 const founders = ref([
   {
     id: 1,
-    name: "Harun Or Rashid",
+    name: "Nizamul Haque",
     title: "President",
     image: male,
     department: "Civil Engineering",
@@ -24,12 +24,22 @@ const founders = ref([
     email: "azizur@example.com",
     linkedin: "https://linkedin.com/in/azizur",
   },
+  {
+    id: 3,
+    name: "Azizur Rahman",
+    title: "Vice President",
+    image: male,
+    department: "Electrical Engineering",
+    bio: "Committed to innovation and leadership.",
+    email: "azizur@example.com",
+    linkedin: "https://linkedin.com/in/azizur",
+  },
 ]);
 </script>
 
 <template>
   <section class="py-20 bg-background">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container w-full mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-primary mb-4">
           Our <span class="text-secondary">Leadership</span>
@@ -45,7 +55,7 @@ const founders = ref([
         <h3 class="text-2xl font-semibold text-foreground mb-8 text-center">
           <span class="text-primary text-3xl font-bold">Founding Members</span>
         </h3>
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  mx-auto">
           <div
             v-for="founder in founders"
             :key="founder.id"

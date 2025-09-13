@@ -11,10 +11,10 @@ import bgImg from "../../assets/image/office.jpg";
     <div class="absolute inset-0 bg-black opacity-60"></div>
 
     <!-- Content -->
-    <div class="relative z-20 text-white max-w-3xl animate-fade-in">
-      <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold leading-relaxed">
-        ইঞ্জিনিয়ারদের বৃহত্তম প্ল্যাটফর্মে যোগ দিন।<br />
-        একটি অরাজনৈতিক অলাভজনক স্বেচ্ছাসেবী পেশাজীবী সংগঠন।
+    <div class="relative z-20 text-white max-w-4xl animate-fade-in">
+      <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold leading-normal pb-2">
+         Join the largest platform for engineers.<br />
+A non-political, non-profit, voluntary professional organization.
       </h2>
       <button
         className="relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-mono tracking-tighter text-white bg-gradient-to-r from-secondary to-accent/70 rounded-lg group cursor-pointer"

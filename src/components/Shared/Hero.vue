@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 const slides = [
   {
@@ -29,9 +29,7 @@ const slides = [
     <swiper
       :spaceBetween="30"
       :effect="'fade'"
-      :navigation="{
-        clickable: true,
-      }"
+      
       :loop="true"
       :pagination="{
         clickable: true,
@@ -40,7 +38,8 @@ const slides = [
         delay: 3000,
         disableOnInteraction: false,
       }"
-      :modules="[EffectFade, Pagination, Autoplay, Navigation]"
+       :speed="1000"
+      :modules="[EffectFade, Pagination, Autoplay]"
       class="swiper swiper--hero bg-light"
     >
       <SwiperSlide v-for="(slide, index) in slides" :key="index">
@@ -68,7 +67,7 @@ const slides = [
             <div
               class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
             >
-              <div class="max-w-4xl mx-auto">
+              <div class="max-w-7xl mx-auto pt-25">
                 <h1
                   class="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight"
                 >
@@ -81,7 +80,7 @@ const slides = [
                 </h1>
 
                 <p
-                  class="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed"
+                  class="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-normal md:leading-relaxed line-clamp-4"
                 >
                   Discover the story of Engineer Association of Bahubal - from
                   our humble beginnings to becoming a leading professional
@@ -95,3 +94,22 @@ const slides = [
     </swiper>
   </div>
 </template>
+
+<style scoped>
+
+.swiper-pagination-bullet {
+  background-color: var(--color-secondary) !important;
+  width: 10px !important;
+  height: 10px !important;
+  position: relative;
+  top: -10px;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary);
+  width: 8px;
+  height: 8px;
+  position: relative;
+  top: -10px;
+}
+</style>

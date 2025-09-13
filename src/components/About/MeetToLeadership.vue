@@ -5,7 +5,7 @@ import bgImg from "../../assets/image/leader.jpeg";
 
 <template>
   <section
-    class="py-20 h-[270px] bg-fixed bg-cover bg-no-repeat bg-center relative flex items-center justify-center text-center"
+    class="py-8 md:py-20 md:h-[270px] bg-fixed bg-cover bg-no-repeat bg-center relative flex items-center justify-center text-center"
     :style="`background-image: url(${bgImg})`"
   >
     <div

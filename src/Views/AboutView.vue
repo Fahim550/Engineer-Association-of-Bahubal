@@ -1,4 +1,5 @@
 <script setup>
+import Gallery from "@/components/Shared/Gallery.vue";
 import Hero from "../components/Shared/Hero.vue";
 </script>
 
@@ -10,6 +11,7 @@ import Hero from "../components/Shared/Hero.vue";
   <WhatWeDo />
   <MeetToLeadership />
   <Testimonial />
+  <Gallery/>
   <CallToAction />
   <!-- <OurMission /> -->
 </template>

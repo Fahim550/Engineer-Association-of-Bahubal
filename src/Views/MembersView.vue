@@ -1,29 +1,35 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section
-      class="relative py-20 bg-gradient-to-r from-accent/70 via-primary to-gray-900 text-white"
-      aria-labelledby="membership-hero-title"
-    >
-      <!-- Hero Text -->
-      <div class="mx-auto px-4 sm:px-6 lg:px-8 text-center relative py-10">
-        <h1
-          id="membership-hero-title"
-          class="text-5xl lg:text-6xl font-bold mb-6"
-        >
-          Join <span class="text-secondary">EAB</span> Today
-        </h1>
-        <p
-          class="text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed opacity-90"
-        >
-          Become part of Bangladesh's premier engineering association and
-          accelerate your professional growth
-        </p>
-      </div>
+  
 
-      <!-- Stats -->
+    <section
+    class="relative pt-28 pb-10 bg-gradient-to-r from-accent/70 via-primary to-gray-900 text-white overflow-hidden"
+    aria-labelledby="committee-hero-title"
+  >
+    <div
+      class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_left,white,transparent_40%)]"
+    ></div>
+
+    <!-- Hero Content -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1
+        id="committee-hero-title"
+        class="text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg"
+      >
+        Join <span class="text-secondary"> EAB</span> Today
+      </h1>
+      <p
+        class="text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90 line-clamp-3"
+      >
+           Become part of Bangladesh's premier engineering association and
+          accelerate your professional growth
+      </p>
+    </div>
+
+     <!-- Stats -->
       <div
-        class="flex flex-col sm:flex-row items-center justify-center gap-6 text-primary-foreground/90 mb-8"
+        class="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-6 text-primary-foreground/90 mb-8"
       >
         <div class="text-center">
           <div class="text-2xl md:text-3xl font-bold">{{ stats.members }}+</div>
@@ -39,20 +45,28 @@
         </div>
       </div>
 
-      <!-- Decorative SVG Divider -->
-      <div class="absolute left-0 right-0 bottom-0 pointer-events-none">
-        <svg
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-          class="w-full h-12 md:h-16 text-white/10"
-        >
-          <path
-            d="M0,0 C150,60 350,60 600,20 C850,-20 1050,30 1200,40 L1200,120 L0,120 Z"
-            fill="currentColor"
-          />
-        </svg>
-      </div>
-    </section>
+    <!-- Bottom Wave Divider -->
+    <div class="absolute left-0 right-0 bottom-0 pointer-events-none">
+      <svg
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+        class="w-full h-16 text-white/10"
+      >
+        <path
+          d="M0,0 C300,80 900,-40 1200,20 L1200,120 L0,120 Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </section>
+
+     <!-- <CommonHero
+  titleBefore="Join"
+  titleHighlight="EAB"
+  titleAfter="Today"
+  subtitle="Become part of Bangladesh's premier engineering association and
+          accelerate your professional growth"
+/> -->
 
     <!-- Membership Types & Benefits -->
     <section class="py-20 bg-white">

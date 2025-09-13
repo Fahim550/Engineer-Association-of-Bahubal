@@ -2,14 +2,14 @@
   <div>
     <div
       :class="[
-        'bg-blue-950 h-10 text-white flex items-center justify-between px-4 text-sm fixed z-50 w-full transition-all duration-300',
+        'bg-gradient-to-r from-secondary to-accent h-10 text-white flex items-center justify-between px-4 text-sm fixed z-50 w-full transition-all duration-300',
         scrolled ? 'hidden' : 'visible',
       ]"
     >
       <!-- Left side: Email -->
-      <div>
-        <a href="mailto:info@example.com" class="hover:underline"
-          >info@wingsfreightbd.com</a
+      <div >
+        <a href="mailto:info@example.com" class="hover:underline relative"
+          >info@engineersassociationbahubal.com</a
         >
       </div>
 
@@ -58,8 +58,8 @@
       :class="[
         'fixed  w-full z-50 transition-all duration-300',
         scrolled
-          ? 'top-0 bg-white backdrop-blur-lg shadow-md text-secondary font-[500] '
-          : 'top-10 bg-transparent  text-white font-[500] text-shadow-2xl ',
+          ? 'top-0 bg-white/5 backdrop-blur-lg shadow-md text-secondary font-[500] '
+          : 'top-10 bg-white/5 backdrop-blur-md  text-white font-[500] text-shadow-2xl ',
       ]"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,7 +71,7 @@
               src="../../assets/image/logo.jpg"
               alt="Logo"
             />
-            <div class="hidden sm:block">
+            <div class="sm:block">
               <h1 class="text-lg font-bold text-foreground">
                 Engineer Association
               </h1>
@@ -81,7 +81,8 @@
                   scrolled ? 'text-gray-800' : 'text-gray-200',
                 ]"
               >
-                of Bahubal
+              <span class="hidden lg:inline">  of Bahubal</span>
+               
               </p>
             </div>
           </div>
@@ -101,8 +102,8 @@
                 to="/about"
                 class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
               >
-                About Us
-                <svg
+                About <span class="hidden lg:inline"> US</span>
+                <!-- <svg
                   class="w-4 h-4 transform group-hover:-rotate-180 transition-transform"
                   fill="none"
                   stroke="currentColor"
@@ -114,12 +115,12 @@
                     stroke-width="2"
                     d="M19 9l-7 7-7-7"
                   />
-                </svg>
+                </svg> -->
               </RouterLink>
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>
-              <ul
+              <!-- <ul
                 class="absolute left-0 mt-2 w-48 bg-secondary border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
               >
                 <a
@@ -127,7 +128,7 @@
                   class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-accent hover:to-secondary text-white"
                   >Our Activities</a
                 >
-              </ul>
+              </ul> -->
             </div>
 
             <!-- Member -->
@@ -136,7 +137,7 @@
                 to="/membership"
                 class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
               >
-                Member
+                Membership
                 <svg
                   class="w-4 h-4 transform group-hover:-rotate-180 transition-transform"
                   fill="none"
@@ -164,11 +165,11 @@
                   Membership Registration
                 </RouterLink>
 
-                <a
+                <!-- <a
                   href="#"
                   class="block px-4 py-2 text-sm hover:bg-gradient-to-r hover:from-accent hover:to-secondary text-white"
                   >How to Get Membership</a
-                >
+                > -->
               </ul>
             </div>
 
@@ -194,28 +195,16 @@
 
             <!-- News & Update -->
             <div class="relative group">
-              <RouterLink to="news-update"
-                class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
-              >
-                News & Update
-                <svg
-                  class="w-4 h-4 transform group-hover:-rotate-180 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </RouterLink>
+              <RouterLink 
+  to="/news-update"
+  class="relative z-10 px-1 flex items-center gap-1 focus:outline-none"
+>
+  News <span class="hidden lg:inline">& Update</span>
+</RouterLink>
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>
-              <ul
+              <!-- <ul
                 class="absolute left-0 mt-2 w-48 bg-secondary border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
               >
                 <a
@@ -223,24 +212,24 @@
                   class="block px-4 py-2 text-sm text-white hover:bg-gradient-to-r hover:from-accent hover:to-secondary"
                   >Job Board</a
                 >
-              </ul>
+              </ul> -->
             </div>
 
             <!-- Contact Us -->
             <div class="relative group">
-              <RouterLink to="contact-us" class="relative z-10 px-1">Contact Us</RouterLink>
+              <RouterLink to="contact-us" class="relative z-10 px-1">Contact <span class="hidden lg:inline"> Us</span></RouterLink>
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>
             </div>
 
             <!-- Login -->
-            <div class="relative group">
+            <!-- <div class="relative group">
               <a href="#" class="relative z-10 px-1">Login</a>
               <span
                 class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"
               ></span>
-            </div>
+            </div> -->
           </div>
 
           <!-- Mobile Menu Button -->
@@ -249,76 +238,70 @@
               @click="isMobileMenuOpen = !isMobileMenuOpen"
               class="text-secondary hover:text-secondary/80 focus:outline-none"
             >
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+            <div v-if="isMobileMenuOpen">
+
+              <CrossIcon/>
+            </div>
+            <div v-else>
+              <Menu/>
+            </div>
             </button>
           </div>
         </div>
       </div>
       <!-- Mobile Menu -->
-      <div v-if="isMobileMenuOpen" class="md:hidden">
-        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="#" class="block text-secondary hover:text-secondary/80"
-            >Home</a
+      <div v-if="isMobileMenuOpen" class="fixed top-16 bg-white/5  backdrop-blur-lg shadow-md right-0 min-h-full md:hidden z-50 transform transition-transform duration-300 ease-in-out" :class="isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 h-full bg-white/50 backdrop-blur-lg shadow-lg">
+          <RouterLink to="/" class="block text-secondary hover:text-secondary/80"
+            >Home</RouterLink
           >
           <div>
-            <button
+            <RouterLink to="/about"
               @click="toggleSubMenu('about')"
               class="w-full text-left text-secondary hover:text-secondary/80 focus:outline-none"
             >
               About Us
-            </button>
-            <div v-if="openSubMenu === 'about'" class="ml-4">
+            </RouterLink>
+            <!-- <div v-if="openSubMenu === 'about'" class="ml-4">
               <a href="#" class="block text-secondary hover:text-secondary/80"
                 >Our Activities</a
               >
-            </div>
+            </div> -->
           </div>
           <div>
-            <button
+            <RouterLink to="/membership"
               @click="toggleSubMenu('member')"
               class="w-full text-left text-secondary hover:text-secondary/80 focus:outline-none"
             >
-              Member
-            </button>
+              Membership
+            </RouterLink>
             <div v-if="openSubMenu === 'member'" class="ml-4">
-              <a href="#" class="block text-secondary hover:text-secondary/80"
-                >Membership Registration</a
+              <RouterLink to="/membership-registration" class="block text-secondary hover:text-secondary/80"
+                >Membership Registration</RouterLink
               >
-              <a href="#" class="block text-secondary hover:text-secondary/80"
+              <!-- <a href="#" class="block text-secondary hover:text-secondary/80"
                 >How to Get Membership</a
-              >
+              > -->
             </div>
           </div>
-          <a href="#" class="block text-secondary hover:text-secondary/80"
-            >Committees</a
+          <RouterLink to="/committees"  class="block text-secondary hover:text-secondary/80"
+            >Committees</RouterLink
           >
-          <a href="#" class="block text-secondary hover:text-secondary/80"
-            >Job Board</a
+          <!-- <RouterLink href="#" class="block text-secondary hover:text-secondary/80"
+            >Job Board</RouterLink
+          > -->
+          <RouterLink to="/gallery" class="block text-secondary hover:text-secondary/80"
+            >Gallery</RouterLink
           >
-          <a href="#" class="block text-secondary hover:text-secondary/80"
-            >Gallery</a
+          <RouterLink to="/news-update" class="block text-secondary hover:text-secondary/80"
+            >News & Update</RouterLink
           >
-          <a href="#" class="block text-secondary hover:text-secondary/80"
-            >News & Update</a
+          <RouterLink to="/contact-us" class="block text-secondary hover:text-secondary/80"
+            >Contact Us</RouterLink
           >
-          <a href="#" class="block text-secondary hover:text-secondary/80"
-            >Contact Us</a
-          >
-          <a href="#" class="block text-secondary hover:text-secondary/80"
+          <!-- <a href="#" class="block text-secondary hover:text-secondary/80"
             >Login</a
-          >
+          > -->
         </div>
       </div>
     </nav>
@@ -326,6 +309,7 @@
 </template>
 
 <script setup>
+import { CrossIcon, Menu } from "lucide-vue-next";
 import { onBeforeUnmount, onMounted, reactive, ref } from "vue";
 import { RouterLink } from "vue-router";
 
@@ -342,7 +326,7 @@ function toggleDropdown(menu) {
 }
 
 function handleScroll() {
-  scrolled.value = window.scrollY > 100;
+  scrolled.value = window.scrollY > 300;
 }
 
 onMounted(() => {

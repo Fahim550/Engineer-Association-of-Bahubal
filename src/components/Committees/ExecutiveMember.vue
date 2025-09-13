@@ -76,7 +76,7 @@ function closeModal() {
 </script>
 
 <template>
-  <section class="container mx-auto py-12">
+  <section class="container mx-auto py-12 px-6">
     <!-- Header -->
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
